@@ -1,24 +1,23 @@
-# Como configurar/instalar/usar o `btop` no `Linux Ubuntu`
+# Como configurar/instalar/usar o `btscanner` no `Linux Ubuntu`
 
 ## Resumo
 
-Neste documento estão contidos os principais comandos e configurações para configurar/instalar/usar o `btop` no `Linux Ubuntu`.
+Neste documento estão contidos os principais comandos e configurações para configurar/instalar/usar o `btscanner` no `Linux Ubuntu`.
 
 ## _Abstract_
 
-_This document contains the main commands and settings to configure/install/use the `btop` on `Linux Ubuntu`._
+_This document contains the main commands and settings to configure/install/use the `btscanner` on `Linux Ubuntu`._
 
 ## Descrição [1][2]
 
-### `btop`
+### `btscanner`
 
-O `btop` é uma ferramenta de monitoramento de recursos de sistema para sistemas `Linux`, incluindo o Ubuntu. A sigla "btop" pode ser interpretada como `"Better TOP"`, uma referência ao comando `top` que também serve para monitorar a atividade do sistema em tempo real. O `btop` oferece uma visão geral do uso da CPU, memória, lista de processos e outros recursos do sistema de forma visual e interativa.
+O btscanner é uma ferramenta de linha de comando utilizada para explorar dispositivos Bluetooth ao redor, identificando e listando serviços disponíveis e informações sobre dispositivos detectados. Ele permite aos usuários escanear o ambiente em busca de dispositivos Bluetooth ativos, exibindo detalhes como endereços MAC, nomes dos dispositivos e serviços oferecidos, facilitando a análise e o monitoramento de redes Bluetooth em um ambiente específico.
 
-O `btop` é conhecido por seu layout amigável e fácil de usar, fornecendo informações de forma mais organizada e visualmente atraente em comparação com o comando `top`. Ele também permite que você interaja diretamente para matar processos, filtrar listas e muito mais, tudo diretamente da interface.
 
-## 1. Configurar/Instalar o `btop` no `Linux Ubuntu` [1]
+## 1. Configurar/Instalar o `btscanner` no `Linux Ubuntu` [1]
 
-Para instalar o `btop` no `Linux Ubuntu`, você pode usar o gerenciador de pacotes `snap`. Siga os passos abaixo:
+Para instalar o `btscanner` no `Linux Ubuntu`, você pode usar o gerenciador de pacotes `snap`. Siga os passos abaixo:
 
 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
@@ -42,16 +41,16 @@ Para instalar o `btop` no `Linux Ubuntu`, você pode usar o gerenciador de pacot
     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
    
 
-3. **Instalar via Snap:** `sudo snap install btop`
+3. **Instale o `btscanner`**: Agora, você pode instalar o `btscanner` usando o gerenciador de pacotes `apt`. Execute o comando: `sudo apt install btscanner -y`
 
-4. Depois de instalado, você pode executá-lo simplesmente digitando btop no terminal: `btop`
+4. **Verifique a instalação**: Após a instalação, você pode verificar se o `btscanner` foi instalado corretamente executando: `btscanner --version`
 
-Isso abrirá a interface do btop, onde você pode monitorar e gerenciar os recursos do sistema.
+Este comando deve mostrar a versão do btscanner instalada, indicando que a instalação foi bem-sucedida.
 
 
 ## 2. Código completo para configurar/instalar
 
-Para instalar o `btop` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
+Para instalar o `btscanner` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
@@ -66,12 +65,12 @@ Para instalar o `btop` no `Linux Ubuntu` sem precisar digitar linha por linha, v
     sudo apt clean
     sudo apt list --upgradable
     sudo apt full-upgrade -y
-    sudo snap install btop
-    btop
+    sudo apt install btscanner -y
+    btscanner --version
     ```
 
 ## Referências
 
-[1] OPENAI. ***O que é o btop?.*** Disponível em: <https://chat.openai.com/c/35bba29e-8c34-40e1-9db1-3369f3c5c476> (texto adaptado). ChatGPT. Acessado em: 25/10/2023 13:08.
+[1] OPENAI. ***Instale btscanner no Ubuntu..*** Disponível em: <https://chatgpt.com/c/6170c111-c77c-498f-afad-3ccf5b25fe42> (texto adaptado). ChatGPT. Acessado em: 25/10/2023 13:08.
 
 [2] OPENAI. ***Vs code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). ChatGPT. Acessado em: 14/11/2023 09:33.
